@@ -23,11 +23,11 @@ handleSubmit = (e) => {
   dispatch(addQuiz(quiz, history))
 }
 
-  handleChange = (e, { name, value }) => this.setState({ [name]: value })
+handleChange = (e, { name, value }) => this.setState({ [name]: value })
 
-  riftChange = (rift) => {
-    this.setState({ content: rift })
-  }
+riftChange = (rift) => {
+  this.setState({ content: rift })
+}
  
   render(){
     const { title, due_date, points } = this.state
